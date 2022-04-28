@@ -107,18 +107,8 @@ public class Chessboard {
    }
 
    public static void main(String[] args) {
-      //        for (int i = 1; i <= 15; i++) {
-      //            long start = System.currentTimeMillis();
-      //            System.out.println("R = " + i + ", C = " + i + ", N = " + i + ": " + new Chessboard(i, i).layout(i) + ", time1: " + (System.currentTimeMillis() - start));
-      //        }
       long start = System.currentTimeMillis();
       int rows = 8, cols = 8, queens = 8;
-      //        System.out.println("R = " + rows + ", C = " + cols + ", N = " + queens + ": " + new Chessboard(rows, cols).layout(queens));
-      //        String firstName = "Adam";
-      //        String secondName = "Hotěk";
-      //        rows = firstName.length();
-      //        cols = Math.max(rows + 1, secondName.length());
-      //        queens = Math.min(rows, cols);
       System.out.println(
             "R = " + rows + ", C = " + cols + ", N = " + queens + ": " + new Chessboard(rows, cols).layout(queens));
       System.out.println(System.currentTimeMillis() - start + " ms");
